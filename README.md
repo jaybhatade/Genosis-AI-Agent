@@ -115,19 +115,21 @@ Create a `.env` file in the root directory:
 
 ```bash
 # .env file
+# Google Cloud Project Configuration
+PROJECT_ID=your-project-id
+PROJECT_NUMBER=your-project-number
+
+# Service Account
+SA_NAME=your-service-account-name
+SERVICE_ACCOUNT=your-service-account-email
 
 # Model Configuration
-MODEL=gemini-1.5-flash
+MODEL=your-model-name
 
-# Optional: Specify alternative models
-# MODEL=gemini-1.5-pro
-# MODEL=gemini-1.0-pro
-
-# Google Cloud Project (if not set via gcloud)
+# Vertex AI Settings
+GOOGLE_GENAI_USE_VERTEXAI=true
 GOOGLE_CLOUD_PROJECT=your-project-id
-
-# Optional: Logging level
-LOG_LEVEL=INFO
+GOOGLE_CLOUD_LOCATION=your-region
 ```
 
 ### Model Options
